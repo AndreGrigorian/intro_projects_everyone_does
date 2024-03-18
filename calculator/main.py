@@ -51,7 +51,6 @@ def main():
         print("Invalid Entry.")
     
     while choice != 8:
-
         if choice == 1:
             addition()
         elif choice == 2:
@@ -75,7 +74,6 @@ def main():
             choice = int(input("Enter Option #: "))
         except:
             print("Invalid Entry.")
-    
     print("Goodbye!")
 
 
