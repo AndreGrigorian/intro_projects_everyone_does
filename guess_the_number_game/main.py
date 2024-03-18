@@ -6,7 +6,7 @@ def play(mode):
     """Runs Game cylce until a loss or win
     
     Args:
-        mode (int): Difficulty level.  1- easy, 2- moderate, 3-Hard,
+        mode (int): Difficulty level.  1- easy, 2- moderate, 3-Hard, 4-Custom
     Returns:
         None
     """
@@ -38,10 +38,6 @@ def play(mode):
     print(f"You ran out of tries, the number was {secret_number}")
     
 
-   
-
-
-
 def main():
     print("1. Easy\n2. Moderate\n3. Hard\n4. Custom\n5. Quit")
     try: 
@@ -60,9 +56,8 @@ def main():
             mode = int(input("Select Option: "))
         except:
             print("Enter valid input please")
-   
+    print("Goodbye!")
 
     
-
 if __name__ == "__main__":
     main()
