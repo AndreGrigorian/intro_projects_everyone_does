@@ -44,6 +44,7 @@ def main():
         mode = int(input("Select Option: "))
     except:
         print("Enter valid input please")
+        return
     
     
     while mode != 5:
