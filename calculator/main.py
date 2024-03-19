@@ -49,6 +49,7 @@ def main():
         choice = int(input("Enter Option #: "))
     except:
         print("Invalid Entry.")
+        return
     
     while choice != 8:
         if choice == 1:
