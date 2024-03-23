@@ -79,7 +79,7 @@ def main():
                 image_label.configure(image=photo) 
                 image_label.image = photo
             else: 
-                status_label.configure(text="Hangman died", foreground="red")
+                status_label.configure(text=f"Hangman died, the word was {random_word}", foreground="red")
         else:
             status_label.configure(text="Something went wrong try again. ", foreground="red")
             return
