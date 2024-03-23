@@ -98,7 +98,6 @@ def main():
     m.mainloop()
 
     
-    # play(random_word)
 
 
 if __name__ == "__main__":
