@@ -72,6 +72,9 @@ def main():
                 status_label.configure(text="Congratulations! You Won!", foreground="green")
         elif guess not in random_word:
             #progress hangman photo
+            if guess in guessed_letters:
+                status_label.configure(text=f"Already guessed '{guess}'. Try something new!", foreground="red")
+                return 
             if image_index < len(images)-1:
                 image_index = image_index + 1  
                 image = Image.open(f"./images/{images[image_index]}")
